@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    background: #f8e5a6;
+    text-align: center;
+  }
+
+  
+  .start_page {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .start_button {
+    border: 5px solid rgb(30, 97, 4);
+    background-color: green;
+    color:white;
+    padding: 14px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    margin: 8px 2px;
+    cursor: pointer;
+  }
+
+  h1 {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
