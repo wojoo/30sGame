@@ -14,7 +14,6 @@ function sleep(time) {
 var word_num = 0;
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
-    //if (CardIsClicked){
     if (word_num == 1) {
         document.getElementById("word1").textContent = "panda";
         CardIsClicked = false;
@@ -24,111 +23,75 @@ function flipWord() {
         CardIsClicked = false;
     }
     if (word_num == 3) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "pikachu";
-        });
+        document.getElementById("word1").textContent = "pikachu";
         CardIsClicked = false;
     }
     if (word_num == 4) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "lion";
-        });
+        document.getElementById("word2").textContent = "camel";
         CardIsClicked = false;
     }
     if (word_num == 5) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "giraffe";
-        });
+        document.getElementById("word1").textContent = "peppa pig";
         CardIsClicked = false;
     }
     if (word_num == 6) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "pokemon";
-        });
+        document.getElementById("word2").textContent = "dolphin";
         CardIsClicked = false;
     }
     if (word_num == 7) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "octopus";
-        });
+        document.getElementById("word1").textContent = "octopus";
         CardIsClicked = false;
     }
     if (word_num == 8) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "grasshopper";
-        });
+        document.getElementById("word2").textContent = "Mickey Mouse";
         CardIsClicked = false;
     }
     if (word_num == 9) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "spider";
-        });
+        document.getElementById("word1").textContent = "spider";
         CardIsClicked = false;
     }
     if (word_num == 10) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "cat";
-        });
+        document.getElementById("word2").textContent = "the angry bird";
         CardIsClicked = false;
     }
     if (word_num == 11) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "flamingo";
-        });
+        document.getElementById("word1").textContent = "flamingo";
         CardIsClicked = false;
     }
     if (word_num == 12) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "emu";
-        });
+        document.getElementById("word2").textContent = "emu";
         CardIsClicked = false;
     }
     if (word_num == 13) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "koala";
-        });
+        document.getElementById("word1").textContent = "koala";
         CardIsClicked = false;
     }
     if (word_num == 14) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "squirral";
-        });
+        document.getElementById("word2").textContent = "Animal crossing";
         CardIsClicked = false;
     }
     if (word_num == 15) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "dinosaur";
-        });
+        document.getElementById("word1").textContent = "dinosaur";
         CardIsClicked = false;
     }
     if (word_num == 16) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "pigeon";
-        });
+        document.getElementById("word2").textContent = "Tom and Jerry";
         CardIsClicked = false;
     }
     if (word_num == 17) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "rabbit";
-        });
+        document.getElementById("word1").textContent = "rabbit";
         CardIsClicked = false;
     }
     if (word_num == 18) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "fish";
-        });
+        document.getElementById("word2").textContent = "We bare bears";
         CardIsClicked = false;
     }
     if (word_num == 19) {
-        sleep(100).then(() => {
-            document.getElementById("word1").textContent = "chicken";
-        });
+        document.getElementById("word1").textContent = "Icebear";
         CardIsClicked = false;
     }
     if (word_num == 20) {
-        sleep(100).then(() => {
-            document.getElementById("word2").textContent = "shark";
-        });
+        document.getElementById("word2").textContent = "shark";
         CardIsClicked = false;
     }
     if (word_num == 21) {

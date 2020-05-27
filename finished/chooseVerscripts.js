@@ -1,8 +1,6 @@
-
 const button = document.querySelectorAll('.but');
 
 function time() {
-    //document.getElementsByClassName("start_page").innerHTML = "Paragraph changed.";
     var element = document.getElementById("intro-words");
     element.classList.toggle("hide");
     var element = document.getElementById("intro-time");
