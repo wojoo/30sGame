@@ -107,7 +107,7 @@ var timeup = setTimeout(function() {
     window.location = "endpage.html";
 }, 300000)
 
-var seconds = 300;
+var seconds = 30;
 var count = setInterval(function() {
     if (seconds >= 0) {
         if (seconds%60 < 10) {
