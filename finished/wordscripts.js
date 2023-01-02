@@ -15,83 +15,83 @@ var word_num = 0;
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
     if (word_num == 1) {
-        document.getElementById("word1").textContent = "panda";
+        document.getElementById("word1").textContent = "Volt";
         CardIsClicked = false;
     }
     if (word_num == 2) {
-        document.getElementById("word2").textContent = "penguin";
+        document.getElementById("word2").textContent = "Ampère";
         CardIsClicked = false;
     }
     if (word_num == 3) {
-        document.getElementById("word1").textContent = "pikachu";
+        document.getElementById("word1").textContent = "Watt";
         CardIsClicked = false;
     }
     if (word_num == 4) {
-        document.getElementById("word2").textContent = "camel";
+        document.getElementById("word2").textContent = "spanning";
         CardIsClicked = false;
     }
     if (word_num == 5) {
-        document.getElementById("word1").textContent = "peppa pig";
+        document.getElementById("word1").textContent = "stroomsterkte";
         CardIsClicked = false;
     }
     if (word_num == 6) {
-        document.getElementById("word2").textContent = "dolphin";
+        document.getElementById("word2").textContent = "vermogen";
         CardIsClicked = false;
     }
     if (word_num == 7) {
-        document.getElementById("word1").textContent = "octopus";
+        document.getElementById("word1").textContent = "elektriciteit";
         CardIsClicked = false;
     }
     if (word_num == 8) {
-        document.getElementById("word2").textContent = "Mickey Mouse";
+        document.getElementById("word2").textContent = "geleider";
         CardIsClicked = false;
     }
     if (word_num == 9) {
-        document.getElementById("word1").textContent = "spider";
+        document.getElementById("word1").textContent = "isolator";
         CardIsClicked = false;
     }
     if (word_num == 10) {
-        document.getElementById("word2").textContent = "the angry bird";
+        document.getElementById("word2").textContent = "serieschakeling";
         CardIsClicked = false;
     }
     if (word_num == 11) {
-        document.getElementById("word1").textContent = "flamingo";
+        document.getElementById("word1").textContent = "parallelschakeling";
         CardIsClicked = false;
     }
     if (word_num == 12) {
-        document.getElementById("word2").textContent = "emu";
+        document.getElementById("word2").textContent = "lamp";
         CardIsClicked = false;
     }
     if (word_num == 13) {
-        document.getElementById("word1").textContent = "koala";
+        document.getElementById("word1").textContent = "schakelaar";
         CardIsClicked = false;
     }
     if (word_num == 14) {
-        document.getElementById("word2").textContent = "Animal crossing";
+        document.getElementById("word2").textContent = "batterij";
         CardIsClicked = false;
     }
     if (word_num == 15) {
-        document.getElementById("word1").textContent = "dinosaur";
+        document.getElementById("word1").textContent = "spanningsbron";
         CardIsClicked = false;
     }
     if (word_num == 16) {
-        document.getElementById("word2").textContent = "Tom and Jerry";
+        document.getElementById("word2").textContent = "energiegebruik";
         CardIsClicked = false;
     }
     if (word_num == 17) {
-        document.getElementById("word1").textContent = "rabbit";
+        document.getElementById("word1").textContent = "2M3";
         CardIsClicked = false;
     }
     if (word_num == 18) {
-        document.getElementById("word2").textContent = "We bare bears";
+        document.getElementById("word2").textContent = "TikTok";
         CardIsClicked = false;
     }
     if (word_num == 19) {
-        document.getElementById("word1").textContent = "Icebear";
+        document.getElementById("word1").textContent = "Mickey Mouse";
         CardIsClicked = false;
     }
     if (word_num == 20) {
-        document.getElementById("word2").textContent = "shark";
+        document.getElementById("word2").textContent = "bliksem";
         CardIsClicked = false;
     }
     if (word_num == 21) {
