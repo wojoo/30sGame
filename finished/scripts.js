@@ -1,4 +1,4 @@
 function start() {
-    window.location = "chooseVer.html";
+    window.location = "card_word.html";
 }
 
