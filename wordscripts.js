@@ -1,3 +1,23 @@
+// // TO FIX
+// import * as fs from 'fs'
+// // get filesystem module
+// function readtxtfile(filename) {
+//    // const fs = require("fs");
+
+//     // using the readFileSync() function
+//     // and passing the path to the file
+//     const buffer = fs.readFileSync(filename);
+
+//     // use the toString() method to convert
+//     // Buffer into String and split on lines 
+//     const fileContent = buffer.toString();
+//     const arr = fileContent.split(/\r?\n/);
+
+//     return arr;
+// } 
+
+// const wordstxt = readtxtfile('words.txt')
+
 // set up 
 const cards = document.querySelectorAll('.cards');
 cards.forEach(card => card.addEventListener('click', flipWord));
@@ -13,33 +33,15 @@ function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve,time));
 }
 
-// get filesystem module
-function readtxtfile(filename) {
-    const fs = require("fs");
-
-    // using the readFileSync() function
-    // and passing the path to the file
-    const buffer = fs.readFileSync(filename);
-
-    // use the toString() method to convert
-    // Buffer into String and split on lines 
-    const fileContent = buffer.toString();
-    const arr = fileContent.split(/\r?\n/);
-
-    return arr;
-} 
-
-//const wordstxt = readtxtfile('words.txt')
-
 
 // randomize the words 
 //const wordstxt = ['een ', 'twee', 'drie', 'vier', 'vijf'];  // to debug
-
+// TEMP
 const wordstxt = ['spanning', 'stroomsterkte ', 'vermogen', 'energiegebruik', 'Watt', 'Volt', 'Ampère', 'V', 'A', 'P ', 'U ', 'I ', 'E ', 't ', 'kWh', 'W ', 'KiloWattUur', 'geleider', 'isolator', 'elektriciteit', 'elektrische energie ', 'materiaal dat geleidt ', 'materiaal dat isoleert ', 'serieschakeling ', 'parallelschakeling', 'lamp', 'schakelaar', 'batterij', 'spanningsbron', 'bliksem', 'dynamo', 'kring ', 'open ', 'energiebron', 'zonnecel', 'kernenergie', 'windenergie', 'oplaadpaal', 'stopcontact', 'eenheid', 'natuurkunde', 'Youtube', 'Disney', 'Segbroek College', 'Tesla auto', 'scooter', '2M3', 'TikTok', 'Mickey Mouse', 'McDonalds ', 'Den Haag', 'Adidas', 'Nike', 'Whatsapp ', 'Nederland '];
 
-function shuffle(wordstxt) {
-    const random = Math.floor(Math.random() * wordstxt.length);
-        return wordstxt[random]
+function shuffle(wordarray) {
+    const random = Math.floor(Math.random() * wordarray.length);
+        return wordarray[random]
 }
 
 // flip card with new random word on click
@@ -47,8 +49,9 @@ function shuffle(wordstxt) {
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
 
-    document.getElementById("word2").textContent = shuffle(wordstxt);
-    document.getElementById("word1").textContent = shuffle(wordstxt);
+    randomword = shuffle(wordstxt)
+    document.getElementById("word2").textContent = ">";
+    document.getElementById("word1").textContent = randomword;
     CardIsClicked = false;
 
     if (CardIsClicked) {
