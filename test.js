@@ -29,11 +29,19 @@ function readtxtfile(filename) {
     const fileContent = buffer.toString();
     const arr = fileContent.split(/\r?\n/)
 
-    console.log(fileContent);
-    console.log(arr);
+    //console.log(fileContent);
+    //console.log(arr);
 
     return arr;
 } 
 
-words = readtxtfile('words.txt')
+const words = readtxtfile('words.txt')
 console.log(words)
+
+function shuffle(words) {
+    const random = Math.floor(Math.random() * words.length);
+        return words[random]
+}
+
+randomword = shuffle(words)
+console.log(randomword)

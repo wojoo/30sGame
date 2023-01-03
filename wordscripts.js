@@ -13,147 +13,44 @@ function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve,time));
 }
 
-// // get filesystem module
-// function readtxtfile(filename) {
-//     const fs = require("fs");
+// get filesystem module
+function readtxtfile(filename) {
+    const fs = require("fs");
 
-//     // using the readFileSync() function
-//     // and passing the path to the file
-//     const buffer = fs.readFileSync(filename);
+    // using the readFileSync() function
+    // and passing the path to the file
+    const buffer = fs.readFileSync(filename);
 
-//     // use the toString() method to convert
-//     // Buffer into String and split on lines 
-//     const fileContent = buffer.toString();
-//     const arr = fileContent.split(/\r?\n/)
+    // use the toString() method to convert
+    // Buffer into String and split on lines 
+    const fileContent = buffer.toString();
+    const arr = fileContent.split(/\r?\n/);
 
-//     console.log(fileContent);
-//     console.log(arr);
+    return arr;
+} 
 
-//     return arr;
-// } 
-
-// const words = readtxtfile('words.txt')
+//const wordstxt = readtxtfile('words.txt')
 
 
 // randomize the words 
-//const words = ['een ', 'twee', 'drie', 'vier', 'vijf'];  // to debug
+//const wordstxt = ['een ', 'twee', 'drie', 'vier', 'vijf'];  // to debug
 
-const words = ['spanning', 'stroomsterkte ', 'vermogen', 'energiegebruik', 'Watt', 'Volt', 'Ampère', 'V', 'A', 'P ', 'U ', 'I ', 'E ', 't ', 'kWh', 'W ', 'KiloWattUur', 'geleider', 'isolator', 'elektriciteit', 'elektrische energie ', 'materiaal dat geleidt ', 'materiaal dat isoleert ', 'serieschakeling ', 'parallelschakeling', 'lamp', 'schakelaar', 'batterij', 'spanningsbron', 'bliksem', 'dynamo', 'kring ', 'open ', 'energiebron', 'zonnecel', 'kernenergie', 'windenergie', 'oplaadpaal', 'stopcontact', 'eenheid', 'natuurkunde', 'Youtube', 'Disney', 'Segbroek College', 'Tesla auto', 'scooter', '2M3', 'TikTok', 'Mickey Mouse', 'McDonalds ', 'Den Haag', 'Adidas', 'Nike', 'Whatsapp ', 'Nederland '];
+const wordstxt = ['spanning', 'stroomsterkte ', 'vermogen', 'energiegebruik', 'Watt', 'Volt', 'Ampère', 'V', 'A', 'P ', 'U ', 'I ', 'E ', 't ', 'kWh', 'W ', 'KiloWattUur', 'geleider', 'isolator', 'elektriciteit', 'elektrische energie ', 'materiaal dat geleidt ', 'materiaal dat isoleert ', 'serieschakeling ', 'parallelschakeling', 'lamp', 'schakelaar', 'batterij', 'spanningsbron', 'bliksem', 'dynamo', 'kring ', 'open ', 'energiebron', 'zonnecel', 'kernenergie', 'windenergie', 'oplaadpaal', 'stopcontact', 'eenheid', 'natuurkunde', 'Youtube', 'Disney', 'Segbroek College', 'Tesla auto', 'scooter', '2M3', 'TikTok', 'Mickey Mouse', 'McDonalds ', 'Den Haag', 'Adidas', 'Nike', 'Whatsapp ', 'Nederland '];
 
-function shuffle(words) {
-    const random = Math.floor(Math.random() * words.length);
-        return words[random]
+function shuffle(wordstxt) {
+    const random = Math.floor(Math.random() * wordstxt.length);
+        return wordstxt[random]
 }
 
 // flip card with new random word on click
-var word_num = 0;
+
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
 
-    if (word_num == 1) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 2) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 3) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 4) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 5) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 6) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 7) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 8) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 9) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 10) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 11) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 12) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 13) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 14) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 15) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 16) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 17) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 18) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 19) {
-        document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 20) {
-        document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle(words);
-        CardIsClicked = false;
-    }
-    if (word_num == 21) {
-        window.location = "endpage.html"
-    }
-    word_num++;
+    document.getElementById("word2").textContent = shuffle(wordstxt);
+    document.getElementById("word1").textContent = shuffle(wordstxt);
+    CardIsClicked = false;
+
     if (CardIsClicked) {
         flipWord();
     }
