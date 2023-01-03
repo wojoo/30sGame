@@ -15,7 +15,7 @@
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    width:55%;
+    width:75%;
     height:60%;
     box-shadow: 5px 5px 5px rgba(102, 120, 155, 0.507);
     background-color: rgb(215, 224, 247);

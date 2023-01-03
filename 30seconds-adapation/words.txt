@@ -1,5 +1,55 @@
-een 
-twee
-drie
-vier
-vijf
+spanning
+stroomsterkte 
+vermogen
+energiegebruik
+Watt
+Volt
+Ampère
+V
+A
+P 
+U 
+I 
+E 
+t 
+kWh
+W 
+KiloWattUur
+geleider
+isolator
+elektriciteit
+elektrische energie 
+materiaal dat geleidt 
+materiaal dat isoleert 
+serieschakeling 
+parallelschakeling
+lamp
+schakelaar
+batterij
+spanningsbron
+bliksem
+dynamo
+kring 
+open 
+energiebron
+zonnecel
+kernenergie
+windenergie
+oplaadpaal
+stopcontact
+eenheid
+natuurkunde
+Youtube
+Disney
+Segbroek College
+Tesla auto
+scooter
+2M3
+TikTok
+Mickey Mouse
+McDonalds 
+Den Haag
+Adidas
+Nike
+Whatsapp 
+Nederland 
