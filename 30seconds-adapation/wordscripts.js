@@ -20,6 +20,7 @@ function shuffle() {
 var word_num = 0;
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
+
     if (word_num == 1) {
         document.getElementById("word2").textContent = " ";
         document.getElementById("word1").textContent = shuffle();
@@ -129,11 +130,11 @@ function flipWord() {
     }
 }
 
-var timeup = setTimeout(function() {
-    window.location = "endpage.html";
-}, 300000)
+// var timeup = setTimeout(function() {
+    //window.location = "endpage.html";
+//}, 300000)
 
-var seconds = 30;
+var seconds = 5;
 var count = setInterval(function() {
     if (seconds >= 0) {
         if (seconds%60 < 10) {
@@ -144,6 +145,7 @@ var count = setInterval(function() {
         document.getElementById("timer").textContent = (seconds-seconds%60)/60 + ": " + message;
     } else {
         clearInterval(count);
+        window.location = "endpage.html";
     }
     seconds--;
 }, 1000);
