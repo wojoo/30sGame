@@ -1,3 +1,4 @@
+// set up 
 const cards = document.querySelectorAll('.cards');
 cards.forEach(card => card.addEventListener('click', flipWord));
 
@@ -7,38 +8,57 @@ function clicked() {
 }
 cards.forEach(card => card.addEventListener('click', clicked));
 
+// timer in view
 function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve,time));
 }
 
-function shuffle() {
-    const months = ["January", "February", "March", "April", "May", "June", "July"];
-    const random = Math.floor(Math.random() * months.length);
-        return months[random]
+// // read words from file
+// const {readFileSync, promises: fsPromises} = require('fs');
+
+// function syncReadFile(filename) {
+//   const contents = readFileSync(filename, 'utf-8');
+
+//   const arr = contents.split(/\r?\n/);
+
+//  //  console.log(arr); // to debug
+
+//   return arr;
+// }
+// //const words = syncReadFile('./words.txt');
+
+
+// randomize the words 
+const words = ["January", "February", "March", "April", "May", "June", "July"]; // to debug
+
+function shuffle(words) {
+    const random = Math.floor(Math.random() * words.length);
+        return words[random]
 }
 
+// flip card with new random word on click
 var word_num = 0;
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
 
     if (word_num == 1) {
         document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle();
+        document.getElementById("word1").textContent = shuffle(words);
         CardIsClicked = false;
     }
     if (word_num == 2) {
         document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle();
+        document.getElementById("word2").textContent = shuffle(words);
         CardIsClicked = false;
     }
     if (word_num == 3) {
         document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = shuffle();
+        document.getElementById("word1").textContent = "haha";
         CardIsClicked = false;
     }
     if (word_num == 4) {
         document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = shuffle();
+        document.getElementById("word2").textContent = "haha";
         CardIsClicked = false;
     }
     if (word_num == 5) {
@@ -130,11 +150,8 @@ function flipWord() {
     }
 }
 
-// var timeup = setTimeout(function() {
-    //window.location = "endpage.html";
-//}, 300000)
-
-var seconds = 5;
+// timer at 30 seconds and show end page when time's up 
+var seconds = 30;
 var count = setInterval(function() {
     if (seconds >= 0) {
         if (seconds%60 < 10) {

@@ -1,20 +1,16 @@
-function shuffle(array) {
-    var i = array.length,
-        j = 0,
-        temp;
+const {readFileSync, promises: fsPromises} = require('fs');
 
-    while (i--) {
+function syncReadFile(filename) {
+ // const contents = readFileSync(filename, 'utf-8');
+ const buffer = readFileSync(filename);
+ const contents = buffer.toString();
+ console.log(contents)
+  const arr = contents.split(/\r?\n/);
 
-        j = Math.floor(Math.random() * (i+1));
+  console.log(arr); 
 
-        // swap randomly chosen element with current element
-        temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-
-    }
-
-    return array;
+  return arr;
 }
 
-var ranNums = shuffle([1,2,3,4,5,6,7,8,9,10]);
+const words = syncReadFile('./words.txt');
+console.log(words)
