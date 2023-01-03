@@ -11,27 +11,33 @@ function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve,time));
 }
 
+function shuffle() {
+    const months = ["January", "February", "March", "April", "May", "June", "July"];
+    const random = Math.floor(Math.random() * months.length);
+        return months[random]
+}
+
 var word_num = 0;
 function flipWord() {
     document.getElementById("words").classList.toggle('flip');
     if (word_num == 1) {
         document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = "Volt";
+        document.getElementById("word1").textContent = shuffle();
         CardIsClicked = false;
     }
     if (word_num == 2) {
         document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = "Ampère";
+        document.getElementById("word2").textContent = shuffle();
         CardIsClicked = false;
     }
     if (word_num == 3) {
         document.getElementById("word2").textContent = " ";
-        document.getElementById("word1").textContent = "Watt";
+        document.getElementById("word1").textContent = shuffle();
         CardIsClicked = false;
     }
     if (word_num == 4) {
         document.getElementById("word1").textContent = " ";
-        document.getElementById("word2").textContent = "spanning";
+        document.getElementById("word2").textContent = shuffle();
         CardIsClicked = false;
     }
     if (word_num == 5) {
